@@ -16,11 +16,11 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/cari" element={<Searching />} />
-          <Route path="/jelajah" element={<Browsing />} />
-          <Route path="/rekomendasi" element={<Recommendation />} />
-          <Route path="/details/:id" element={<Details />} />
-          <Route path="/jelajah/location/:lokasi" element={<Explore />} />
+          <Route path="/search" element={<Searching />} />
+          <Route path="/explore" element={<Browsing />} />
+          <Route path="/recomendation" element={<Recommendation />} />
+          <Route path="/detail/:id" element={<Details />} />
+          <Route path="/explore/:id" element={<Explore />} />
         </Routes>
       </Router>
     </div>

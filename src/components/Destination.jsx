@@ -15,7 +15,7 @@ const Destination = () => {
     const resData = response.data.data;
     setWisata(resData);
     console.log(resData);
-    console.log(id)
+    console.log(id);
   };
 
   useEffect(() => {
@@ -27,38 +27,43 @@ const Destination = () => {
       <section id="Destinasi">
         <div className="w-full min-h-[91vh] h-full bg-theme3">
           <div className="relative px-10 py-32 pb-60 md:px-[7.5rem] lg:px-52 sm:px-20 mx-auto my-auto md:max-w-none">
-          <Button></Button>
-            {wisata.map((value,index) => {
+            <Button />
+            {wisata.map((value, index) => {
               return (
-                <div key={index}
-                  className="h-full bg-opacity-30 bg-center overflow-hidden  rounded-lg bg-cover bg-no-repeat"
+                <div
+                  key={index}
+                  className="h-full overflow-hidden bg-center bg-no-repeat bg-cover rounded-lg bg-opacity-30"
                   style={{ backgroundImage: `url('${value.picture_url}')` }}
                 >
-                  <div className="min-h-full backdrop-blur-xl backdrop-brightness-50 p-4">
+                  <div className="min-h-full p-4 backdrop-blur-xl backdrop-brightness-50">
                     <div>
                       <img
-                        className="w-full h-40 md:h-80 object-cover rounded-xl"
+                        className="object-cover w-full h-40 md:h-80 rounded-xl"
                         src={value.picture_url}
                         alt=""
                       />
                     </div>
-                    <div className=" text-theme1 mt-4">
-                      <h1 className="text-center font-bold text-xl">{value.nama}</h1>
-                      <p className="text-justify text-base mt-4">{value.deskripsi}</p>
+                    <div className="mt-4 text-theme1">
+                      <h1 className="text-xl font-bold text-center">
+                        {value.nama}
+                      </h1>
+                      <p className="mt-4 text-base text-justify">
+                        {value.deskripsi}
+                      </p>
                     </div>
-                    <div className="container bg-gradient-to-l from-fuchsia-100 via-purple-200 to-pink-300 w-full h-full rounded-xl p-4 flex flex-wrap gap-10 items-center justify-center mx-auto max-w-3xl mt-7">
-                      <div className="content-container max-w-sm">
-                        <h2 className="font-semibold text-sm">Lokasi</h2>
-                        <div className="bg-theme1 p-3 w-52 rounded flex items-center justify-between">
+                    <div className="container flex flex-wrap items-center justify-center w-full h-full max-w-3xl gap-10 p-4 mx-auto bg-gradient-to-l from-fuchsia-100 via-purple-200 to-pink-300 rounded-xl mt-7">
+                      <div className="max-w-sm content-container">
+                        <h2 className="text-sm font-semibold">Lokasi</h2>
+                        <div className="flex items-center justify-between p-3 rounded bg-theme1 w-52">
                           <p className="">{value.lokasi}</p>
-                          <svg className="svg-icon w-6" viewBox="0 0 20 20">
+                          <svg className="w-6 svg-icon" viewBox="0 0 20 20">
                             <path d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
                           </svg>
                         </div>
                       </div>
-                      <div className="content-container max-w-sm">
-                        <h2 className="font-semibold text-sm">Harga</h2>
-                        <div className="bg-theme1 p-3 w-52 rounded flex items-center justify-between">
+                      <div className="max-w-sm content-container">
+                        <h2 className="text-sm font-semibold">Harga</h2>
+                        <div className="flex items-center justify-between p-3 rounded bg-theme1 w-52">
                           <p className="">{"RP. " + value.harga}</p>
                           <svg
                             width="24"
@@ -71,9 +76,9 @@ const Destination = () => {
                           </svg>
                         </div>
                       </div>
-                      <div className="content-container max-w-sm">
-                        <h2 className="font-semibold text-sm">Rating</h2>
-                        <div className="bg-theme1 p-3 w-52 rounded flex items-center justify-between">
+                      <div className="max-w-sm content-container">
+                        <h2 className="text-sm font-semibold">Rating</h2>
+                        <div className="flex items-center justify-between p-3 rounded bg-theme1 w-52">
                           <p className="">{value.rating}</p>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"

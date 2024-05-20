@@ -4,10 +4,12 @@ import Destination from "../components/Destination";
 import { Footer } from "../components/Footer";
 
 function details() {
-  return <>
-  <Destination />
-  <Footer />
-  </>;
+  return (
+    <>
+      <Destination />
+      <Footer />
+    </>
+  );
 }
 
 export default details;

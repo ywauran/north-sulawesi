@@ -2,24 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Default from "../assets/default.png";
-
-const locations = [
-  "Kota Manado",
-  "Kota Tomohon",
-  "Kota Bitung",
-  "Kabupaten Minahasa",
-  "Kabupaten Minahasa Utara",
-  "Kabupaten Minahasa Tenggara",
-  "Kabupaten Minahasa Selatan",
-  "Kabupaten Bolaang Mongondow",
-  "Kabupaten Bolaang Mongondow Selatan",
-  "Kabupaten Bolaang Mongondow Timur",
-  "Kabupaten Bolaang Mongondow Utara",
-  "Kota Kotamobagu",
-  "Kepulauan Talaud",
-  "Kepulauan Sangihe",
-  "Kepulauan Sitaro",
-];
+import { locations } from "../utils/data";
 
 const Jelajah = () => {
   return (
@@ -48,16 +31,13 @@ const Jelajah = () => {
                     alt={location}
                   />
                   <div className="p-2">
-                    <Link to={`/jelajah/location/${location}`}>
+                    <Link to={`/explore/${location.id}`}>
                       <h2 className="mb-2 text-lg font-bold text-theme1 ">
-                        {location}
+                        {location.name}
                       </h2>
                     </Link>
                     <p className="text-sm text-justify text-gray-100">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Quibusdam iste ducimus quod incidunt ullam amet omnis
-                      aliquam id fuga, voluptatibus soluta enim accusamus quae
-                      porro deserunt possimus at sunt obcaecati!
+                      {location.description}
                     </p>
                   </div>
                 </div>

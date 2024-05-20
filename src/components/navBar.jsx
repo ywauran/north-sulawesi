@@ -47,7 +47,7 @@ const NavBar = () => {
 
                 <li className="group">
                   <Link
-                    to="/jelajah"
+                    to="/explore"
                     className="flex py-2 mx-8 text-base font-bold text-theme1 group-hover:text-theme2"
                   >
                     Jelajah
@@ -55,7 +55,7 @@ const NavBar = () => {
                 </li>
                 <li className="group">
                   <Link
-                    to="/rekomendasi"
+                    to="/recomendation"
                     className="flex py-2 mx-8 text-base font-bold text-theme1 group-hover:text-theme2"
                   >
                     Rekomendasi
