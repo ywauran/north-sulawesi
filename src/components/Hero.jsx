@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React, { useState, useEffect } from "react";
 import Sampiro from "../assets/sampiro.jpg";
 import Danau from "../assets/danau.jpg";
