@@ -705,7 +705,7 @@ export const getLocations = () => {
 };
 
 export const getDestinationById = (id) => {
-  return destinations.find((destination) => destination.id === id);
+  return destinations.find((destination) => destination.id === parseInt(id));
 };
 
 export const getLocationById = (id) => {
@@ -714,4 +714,8 @@ export const getLocationById = (id) => {
 
 export const getDestinationsByLocationId = (id) => {
   return destinations.filter((destination) => destination.locationsId === id);
+};
+
+export const getDestinationsByManado = () => {
+  return destinations.map((destination) => destination.locationsId === 1);
 };

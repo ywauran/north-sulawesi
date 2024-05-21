@@ -2,13 +2,13 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Cards from "../components/Cards";
 import { Footer } from "../components/Footer";
-import { destinations } from "../utils/data";
+import { destinations, getDestinationsByManado } from "../utils/data";
 
 function Explore() {
   const { id } = useParams();
 
   const filteredDestinations = destinations.filter(
-    (destination) => destination.locationsId === id
+    (destination) => destination.locationsId === parseInt(id)
   );
 
   return (
