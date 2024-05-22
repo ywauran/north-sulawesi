@@ -4,20 +4,13 @@ import Cards from "./Cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
+import { getDestinationsRecommended } from "../utils/data";
+import ImageDefault from "../assets/default.png";
+import { intToString } from "../utils/helper";
 const Rekomendasi = () => {
-  const [wisata, setWisata] = useState([]);
-  const getWisataRekomendasi = async () => {
-    const response = await axios.get(
-      "https://backend-balinesia.herokuapp.com/api/destinations"
-    );
-    const resData = response.data.data;
-    const resFilter = resData.filter((res) => res.rating >= 4.5);
-    const resSort = resFilter.sort(({ rating: a }, { rating: b }) => b - a);
-    setWisata(resSort);
-  };
-
+  const [destinations, setDestinations] = useState([]);
   useEffect(() => {
-    getWisataRekomendasi();
+    setDestinations(getDestinationsRecommended());
   }, []);
 
   return (
@@ -54,10 +47,16 @@ const Rekomendasi = () => {
             }}
             className="mySwiper flex items-center mx-auto justify-center mt-5 !p-8 "
           >
-            {wisata.map((value, index) => {
+            {destinations.map((value, index) => {
               return (
                 <SwiperSlide
-                  style={{ backgroundImage: `url('${value.picture_url}')` }}
+                  src={
+                    value.pictureUrl
+                      ? require(`../assets/${intToString(value.locationsId)}/${
+                          value.pictureUrl
+                        }`)
+                      : ImageDefault
+                  }
                   className="card-container"
                   key={index}
                 >

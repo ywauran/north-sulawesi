@@ -25,6 +25,7 @@ export const destinations = [
       "Taman Nasional Bunaken adalah taman  yang terletak di Segitiga Terumbu Karang yang menjadi habitat bagi 390 spesies terumbu karang dan juga berbagai spesies ikan, moluska, resptil, dan mamalia laut. Taman Nasional Bunaken merupakan perwakilan ekosistem laut di Indonesia, meliputi padang rumput laut, terumbu karang, dan ekosistem pantai.",
     pictureUrl: "bunaken.jpeg",
     locationsId: 1,
+    recommended: true,
   },
   {
     id: 4,
@@ -43,6 +44,7 @@ export const destinations = [
       "Pulau Siladen terletak di sebelah timur Pulau Bunaken atau berjarak 3 kilometer dan 8 kilometer dari pusat Kota Manado dan dapat dicapai dengan kapal motor. Pulau Siladen didominasi dengan hamparan pantai berpasir putih. Wisatawan dapat melakukan berbagai kegiatan seperti Diving Spot, Snorkeling, Berenang dan berjemur di tepi Pantai. ",
     pictureUrl: "siladen.jpg",
     locationsId: 1,
+    recommended: true,
   },
   // {
   //   id: 6,
@@ -88,6 +90,7 @@ export const destinations = [
       "Boulevard Dua Sindulang merupakan salah satu tempat kuliner yang ramai dikunjungi pada malam hari. Dimana ditempat ini menawarkan banyak ragam jenis restauran dan makanan yang lokasinya terletak di tepi pantai. Sehingga para pengunjung dapat menikmati sunset sambil kuliner di sekitarnya.",
     pictureUrl: "boulevard-dua-sindulang.jpg",
     locationsId: 1,
+    recommended: true,
   },
   {
     id: 11,
@@ -106,6 +109,7 @@ export const destinations = [
       "Danau Linow terletak di Desa Lahendong, sekitar 30 Kilometer dari Pusat Kota Tomohon. Danau Linow merupakan danau vulkanik dimana kawasan ini memiliki udara yang sejuk dengan keindahan pemandangan alam di sekitarnya. Danau Linow memiliki kadar belerang yang sangat tinggi sehingga menyebabkan warna air danau mudah berubah warna, dimana dapat menampilkan tiga warna sekaligus yaitu coklat, hijau terang, dan biru cerah.",
     pictureUrl: "danau-linow.jpg",
     locationsId: 2,
+    recommended: true,
   },
   {
     id: 13,
@@ -241,6 +245,7 @@ export const destinations = [
       "Bukit Kasih ini terletak sekitar 55 km arah selatan Manado, tepatnya di desa Kanonang. Bukit Kasih ini merupakan bukit belerang yang masih alami. Di tempat ini perasaan kasih wisatawan akan digugah dimana di puncak kedua Bukit Kasih terdapat 5 rumah ibadat dari semua agama, yaitu Gereja Katolik, Gereja Kristen, Kuil Budha, Masjid, dan Candi Hindu. sedangkan di puncak pertama kita bisa melihat sebuah Salib putih yang tingginya mencapai 53 meter.",
     pictureUrl: "bukit-kasih-kanonang.jpg",
     locationsId: 4,
+    recommended: true,
   },
   {
     id: 28,
@@ -268,6 +273,7 @@ export const destinations = [
       "Desa Wisata Budo merupakan salah satu desa yang masuk 50 besar Anugerah Desa Wisata Indonesia, dimana desa ini memilik daya tarik berupa hutan mangrove seluas sekitar 30 hektar, serta akses alternatif ke Taman Laut Bunaken. Dari tempat ini bisa menikmati panorama Pulau Manado Tua, Bunaken, dan Siladen dari tepi pantai, serta bisa juga menikmati sunset di sore hari.",
     pictureUrl: "desa-wisata-budo.jpg",
     locationsId: 5,
+    recommended: true,
   },
   {
     id: 31,
@@ -322,6 +328,7 @@ export const destinations = [
       "Pulau Bangka adalah sebuah pulau kecil yang terletak tepat di Ujung Timur Laut Sulawesi. Pulau Bangka dikenal dengan pantai indah yang belum terjamah serta wisata menyelam nan eksotik. Di pesisir pulau ini terdapat empat desa, yakni: Lihunu, Kahuku, Libas, dan Ehe. ",
     pictureUrl: "pulau-bangka.jpg",
     locationsId: 5,
+    recommended: true,
   },
   {
     id: 37,
@@ -734,4 +741,10 @@ export const getDestinationsByLocationId = (id) => {
 
 export const getDestinationsByManado = () => {
   return destinations.map((destination) => destination.locationsId === 1);
+};
+
+export const getDestinationsRecommended = () => {
+  return destinations.filter(
+    (destination) => destination?.recommended === true
+  );
 };
