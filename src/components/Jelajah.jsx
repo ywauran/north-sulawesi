@@ -26,7 +26,11 @@ const Jelajah = () => {
                 <div className="min-h-full p-3 bg-slate-700 bg-opacity-30 backdrop-blur backdrop-brightness-50">
                   <img
                     className="object-scale-down w-full h-40 rounded-xl"
-                    src={Default}
+                    src={
+                      location.pictureUrl
+                        ? require(`../assets/kab-kota/${location.pictureUrl}`)
+                        : Default
+                    }
                     alt={location}
                   />
                   <div className="p-2">

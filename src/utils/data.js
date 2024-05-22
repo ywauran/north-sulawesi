@@ -5,7 +5,7 @@ export const destinations = [
     type: "Wisata Buatan",
     description:
       "Malalayang Beach Walk merupakan destinasi wisata yang terletak di tepi jalur Trans Sulawesi. MBW memiliki panjang 2 kilometer, dimana tempat ini menawarkan beragam fasilitas yang dapat dinikmati oleh seluruh lapisan masyarakat, seperti Taman Bermain Anak, Monumen Coelacanth serta area joging track.",
-    pictureUrl: null,
+    pictureUrl: "malalayang-beach-walk.jpeg",
     locationsId: 1,
   },
   {
@@ -610,89 +610,104 @@ export const locations = [
     name: "Kota Manado",
     description:
       "Kota Manado atau Menado adalah ibu kota dari provinsi Sulawesi Utara, Indonesia. Kota Manado memiliki 11 kecamatan serta 87 kelurahan dan desa. Manado terletak di Teluk Manado, dan dikelilingi oleh daerah pegunungan serta pesisir pantainya merupakan tanah reklamasi.",
+    pictureUrl: "manado.jpg",
   },
   {
     id: 2,
     name: "Kota Tomohon",
     description:
       "Kota Tomohon adalah kota di provinsi Sulawesi Utara, Indonesia, yang merupakan enklave dari Kabupaten Minahasa. Kota Tomohon terletak di ketinggian kira-kira 900-1100 meter dari permukaan laut (dpl), diapit oleh 2 gunung berapi aktif, yaitu Gunung Lokon (1.580 m) dan Gunung Mahawu (1.311 m). Suhu di Kota Tomohon pada waktu siang mampu mencapai 30 derajat Celsius dan 18-22 derajat Celsius pada malam hari.",
+    pictureUrl: "tomohon.jpg",
   },
   {
     id: 3,
     name: "Kota Bitung",
     description:
       "Kota Bitung terletak di timur laut Tanah Minahasa. Wilayah Kota Bitung terdiri dari wilayah daratan yang berada di kaki gunung Dua Saudara dan sebuah pulau yang bernama Lembeh. Dari aspek topografis, sebagian besar daratan Kota Bitung berombak berbukit 45,06%, bergunung 32,73%, daratan landai 4,18% dan berombak 18,03%.",
+    pictureUrl: "bitung.jpg",
   },
   {
     id: 4,
     name: "Kabupaten Minahasa",
     description:
       "Kabupaten Minahasa adalah salah satu kabupaten yang berada di provinsi Sulawesi Utara, Indonesia. Ibu kota kabupaten ini terletak di kota Tondano, dengan luas wilayah kabupaten 1.025,85 km². Kabupaten Minahasa memiliki 25 kecamatan, 43 kelurahan dan 227 desa. ",
+    pictureUrl: "minahasa.jpeg",
   },
   {
     id: 5,
     name: "Kabupaten Minahasa Utara",
     description:
       "Kabupaten Minahasa Utara terletak di provinsi Sulawesi Utara, Indonesia. Pusat pemerintahan dan ibu kota berada di Airmadidi. Kabupaten ini memiliki lokasi yang strategis karena berada di antara dua kota, yaitu Manado dan kota pelabuhan Bitung. Dengan jarak dari pusat kota Manado Sampai Airmadidi sekitar 12 km yang dapat ditempuh dalam waktu 30 menit. Sebagian dari kawasan Bandar Udara Sam Ratulangi terletak di wilayah Minahasa Utara.",
+    pictureUrl: "minut.jpg",
   },
   {
     id: 6,
     name: "Kabupaten Minahasa Tenggara",
     description:
       "Kabupaten Minahasa Tenggara adalah kabupaten di provinsi Sulawesi Utara, Indonesia, dengan ibu kota Ratahan yang merupakan pemekaran dari Kabupaten Minahasa Selatan. Kabupaten Minahasa Tenggara memiliki 12 kecamatan, 9 kelurahan dan 135 desa (dari total 171 kecamatan, 332 kelurahan dan 1.507 desa di seluruh Sulawesi Utara).",
+    pictureUrl: "mitra.jpeg",
   },
   {
     id: 7,
     name: "Kabupaten Minahasa Selatan",
     description:
       "Kabupaten Minahasa Selatan dibentuk berdasarkan Undang-Undang Nomor 10 Tahun 2003 tentang Pembentukan Kabupaten Minahasa Selatan dan kota Tomohon di Provinsi Sulawesi Utara, Indonesia oleh DPR RI. Namun kedua daerah pemekaran baru ini diresmikan pada tanggal 25 Februari 2003. Pusat pemerintahan dan sekaligus ibukota kabupaten Minahasa Selatan terletak di Amurang. Kabupaten Minahasa Selatan memiliki 17 kecamatan, 10 kelurahan dan 167 desa.",
+    pictureUrl: "minsel.jpg",
   },
   {
     id: 8,
     name: "Kabupaten Bolaang Mongondow",
     description:
       "Kabupaten Bolaang Mongondow adalah salah satu kabupaten dengan wilayah terluas di Provinsi Sulawesi Utara, Indonesia. Ibu kotanya adalah Lolak. Mayoritas suku di kabupaten ini adalah Mongondow. Bahasa ibu penduduk asli di daerah ini adalah bahasa Mongondow. Kabupaten Bolaang Mongondow terdiri dari 15 kecamatan, 2 kelurahan, dan 200 desa.",
+    pictureUrl: "bolmong.jpg",
   },
   {
     id: 9,
     name: "Kabupaten Bolaang Mongondow Selatan",
     description:
       "Kabupaten Bolaang Mongondow Selatan adalah sebuah kabupaten di Provinsi Sulawesi Utara, Indonesia dengan pusat pemerintahan berada di Bolaang Uki. Kabupaten Bolaang Mongondow Selatan mempunyai topografi wilayah berupa bukitbukit, pegunungan, berpantai dan sebagian kecil adalah dataran rendah bergelombang serta memiliki sungai-sungai besar dengan posisi dari daerah pantai sampai ketinggian 1.500 meter dari permukaan laut.",
+    pictureUrl: "bolsel.jpeg",
   },
   {
     id: 10,
     name: "Kabupaten Bolaang Mongondow Timur",
     description:
       "Kabupaten Bolaang Mongondow Timur adalah kabupaten di Provinsi Sulawesi Utara, Indonesia dengan pusat pemerintahan berlokasi di Tutuyan. Kabupaten Bolaang Mongondow Timur terdiri dari 7 kecamatan dan 81 desa.",
+    pictureUrl: "boltim.jpg",
   },
   {
     id: 11,
     name: "Kabupaten Bolaang Mongondow Utara adalah sebuah kabupaten di provinsi Sulawesi Utara, Indonesia. Ibu kotanya adalah Boroko. Kabupaten Bolaang Mongondow Utara terdiri dari 6 kecamatan, 1 kelurahan, dan 106 desa.",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    pictureUrl: "bolmut.jpeg",
   },
   {
     id: 12,
     name: "Kota Kotamobagu",
     description:
       "Kota Kotamobagu adalah kota di provinsi Sulawesi Utara, Indonesia. Kota kotamobagu sebelumnya berstatus sebagai ibukota Kabupaten Bolaang Mongondow yang kemudian dipindahkan ke Lolak. Kota Kotamobagu terletak di ketinggian antara 180 - 130 meter di atas permukaan laut (dpl). Posisi Kota Kotamobagu berada di sebuah lembah yang dikelilingi pegunungan dan dilewati beberapa sungai.",
+    pictureUrl: "kotamobagu.jpg",
   },
   {
     id: 13,
     name: "Kepulauan Talaud",
     description:
       "Kabupaten Kepulauan Talaud adalah salah satu kabupaten di provinsi Sulawesi Utara, Indonesia, dengan ibu kota Melonguane. Kabupaten ini berasal dari pemekaran wilayah Kabupaten Kepulauan Sangihe Dan Talaud SATAL. Kepulauan Talaud terletak di bagian utara pulau Sulawesi, dan merupakan wilayah paling utara di Indonesia Timur yang berbatasan langsung dengan provinsi Davao Barat dan Timur, Mindanao, Filipina Selatan, negara Filipina.",
+    pictureUrl: "talaud.jpeg",
   },
   {
     id: 14,
     name: "Kepulauan Sangihe",
     description:
       "Kabupaten Kepulauan Sangihe adalah sebuah kabupaten di Provinsi Sulawesi Utara, Indonesia. Kabupaten ini merupakan induk pemekaran dari Kabupaten Kepulauan Talaud dan Kabupaten Kepulauan Siau Tagulandang Biaro. Kabupaten Kepulauan Sangihe terletak di antara Pulau Sulawesi dengan Pulau Mindanao (Filipina) serta berada di bibir Samudera Pasifik. Ibu kota berkedudukan di Tahuna dimana secara keseluruhan jumlah pulau yang ada di kepulauan ini berjumlah 105 pulau dengan rincian ; 79 pulau yang tidak berpenghuni dan 26 pulau berpenghuni.",
+    pictureUrl: "sangihe.jpg",
   },
   {
     id: 15,
     name: "Kepulauan Sitaro",
     description:
       "Kabupaten Kepulauan Siau Tagulandang Biaro atau disingkat Kabupaten Sitaro adalah sebuah kabupaten di provinsi Sulawesi Utara, Indonesia, dengan ibu kota Ondong Siau. Kabupaten ini berasal dari pemekaran wilayah Kabupaten Kepulauan Sangihe Dan Talaud SATAL. Kabupaten Kepulauan Siau Tagulandang Biaro terdiri dari 10 kecamatan, 10 kelurahan, dan 83 desa.",
+    pictureUrl: "sitaro.jpeg",
   },
 ];
 
