@@ -4,6 +4,7 @@ import Cards from "../components/Cards";
 import { Footer } from "../components/Footer";
 import { destinations } from "../utils/data";
 import ImageDefault from "../assets/default.png";
+import { intToString } from "../utils/helper";
 
 function Explore() {
   const { id } = useParams();
@@ -25,7 +26,9 @@ function Explore() {
                     style={{
                       backgroundImage: `url(${
                         item.pictureUrl
-                          ? require(`../assets/manado/${item.pictureUrl}`)
+                          ? require(`../assets/${intToString(
+                              item.locationsId
+                            )}/${item.pictureUrl}`)
                           : ImageDefault
                       })`,
                       backgroundSize: "cover",

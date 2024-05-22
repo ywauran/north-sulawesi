@@ -2,14 +2,18 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Button from "./Button";
 import { getDestinationById } from "../utils/data";
+import ImageDefault from "../assets/default.png";
+import { intToString } from "../utils/helper";
 
 const Destination = () => {
   const { id } = useParams();
-  const [destination, setDestination] = useState([]);
+  const [destination, setDestination] = useState({});
 
   useEffect(() => {
     setDestination(getDestinationById(id));
+    console.log(destination);
   }, [id]);
+
   return (
     <>
       <section id="Destinasi">
@@ -18,13 +22,29 @@ const Destination = () => {
             <Button />
             <div
               className="h-full overflow-hidden bg-center bg-no-repeat bg-cover rounded-lg bg-opacity-30"
-              style={{ backgroundImage: `url('${destination.pictureUrl}')` }}
+              style={{
+                backgroundImage: `url(${
+                  destination.pictureUrl
+                    ? require(`../assets/${intToString(
+                        destination?.locationsId
+                      )}/${destination.pictureUrl}`)
+                    : ImageDefault
+                })`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
             >
               <div className="min-h-full p-4 backdrop-blur-xl backdrop-brightness-50">
                 <div>
                   <img
                     className="object-cover w-full h-40 md:h-80 rounded-xl"
-                    src={destination.pictureUrl}
+                    src={
+                      destination.pictureUrl
+                        ? require(`../assets/${intToString(
+                            destination?.locationsId
+                          )}/${destination.pictureUrl}`)
+                        : ImageDefault
+                    }
                     alt=""
                   />
                 </div>

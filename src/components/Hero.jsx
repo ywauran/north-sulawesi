@@ -4,8 +4,24 @@ import Danau from "../assets/danau.jpg";
 import Sara from "../assets/sara.jpg";
 import Moat from "../assets/moat.jpg";
 import Pantai from "../assets/pantai.jpg";
+import One from "../assets/IMG_5676.jpg";
+import Two from "../assets/IMG_5677.jpg";
+import Three from "../assets/IMG_5678.jpg";
+import Four from "../assets/IMG_5679.jpg";
+import Five from "../assets/IMG_5680.jpg";
 
-const images = [Sampiro, Danau, Sara, Moat, Pantai];
+const images = [
+  Sampiro,
+  Danau,
+  Sara,
+  Moat,
+  Pantai,
+  One,
+  Two,
+  Three,
+  Four,
+  Five,
+];
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,7 +36,7 @@ const Hero = () => {
 
   return (
     <section id="beranda">
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-screen overflow-hidden bg-black">
         <div
           className="flex transition-transform duration-1000"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -30,7 +46,7 @@ const Hero = () => {
               key={index}
               src={image}
               alt={`Slide ${index + 1}`}
-              className="flex-shrink-0 object-cover w-full h-full"
+              className="flex-shrink-0 object-cover w-full h-screen"
             />
           ))}
         </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ImageDefault from "../assets/default.png";
+import { intToString } from "../utils/helper";
 
 const Cards = (props) => {
   return (
@@ -7,7 +9,13 @@ const Cards = (props) => {
       <div className="min-h-full p-3 bg-slate-700 bg-opacity-30 backdrop-blur backdrop-brightness-50">
         <img
           className="object-cover w-full h-40 rounded-xl"
-          src={props.item.pictureUrl}
+          src={
+            props.item.pictureUrl
+              ? require(`../assets/${intToString(props.item.locationsId)}/${
+                  props.item.pictureUrl
+                }`)
+              : ImageDefault
+          }
           alt={props.item.name}
         />
         <div className="p-2">

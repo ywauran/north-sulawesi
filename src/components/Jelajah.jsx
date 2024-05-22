@@ -15,7 +15,7 @@ const Jelajah = () => {
             Jelajahi Destinasi Wisata Yang Ada Di Provinsi Sulawesi Utara
           </div>
           <div className="grid grid-cols-1 gap-10 mx-auto mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center w-fit">
-            {locations.slice(0, 9).map((location, index) => (
+            {locations.map((location, index) => (
               <div
                 key={index}
                 className="card-container w-80"
